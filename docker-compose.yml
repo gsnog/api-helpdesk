@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_helpdesk
+    environment:
+      POSTGRES_DB: helpdeskdb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5434:5432"
