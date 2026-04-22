@@ -44,3 +44,14 @@ Esta API foi desenvolvida para simular um sistema interno de gerenciamento de ch
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/gsnog/api-helpdesk.git](https://github.com/gsnog/api-helpdesk.git)
+
+2. Acesse a pasta do projeto e suba o banco de dados via Docker:
+
+```bash
+docker-compose up -d
+
+3. Execute a aplicação Spring Boot:
+
+```bash
+./mvnw spring-boot:run
+(Nota: O Flyway criará as tabelas e as chaves estrangeiras automaticamente na ordem correta).
